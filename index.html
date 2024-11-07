@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Suvojit BIjli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo"">
+                <ul id=" sidemenu">
+                <li><a href=" #header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Font End Developer</p>
+                <h1>Hi,I'm <span>Suvojit</span><br>Bijali From Kolkata</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------About------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hi,Myself Suvojit Bijali, I have done undergraduate course BCA from Narula Institute of
+                        Technology. I consider my self a responsible and orderly person. I am looking forward to my
+                        first work experience.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contains active-tab" id="skills">
+                        <ul>
+                            <li><span>Font End Developer</span><br>Designing Website</li>
+                            <li><span>Java</span><br>Knows basic of java</li>
+                            <li><span>MS-Office</span><br>Excel & PowerPoint</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="experience">
+                        <ul>
+                            <li><span>Internship</span><br>I have done a paid intership on Euphoria Genx.There i have
+                                done a projoect on online Education website using python django freamwork.</li>
+                            <li><span>Self Made Project</span><br>I also completed some self made project like Spotify
+                                clone webpage using HTML or CSS and made my Personal Portfolio webpage using HTML,CSS or
+                                JavaScript. </li>
+                            <li><span>Office Work-Experence</span><br>I have 2 months of
+                                work experience in data analysis at a company
+                                named IIMI. </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contains" id="education">
+                        <ul>
+                            <li><span>Madhyamik</span><br>2014-2019 Primary Education
+                                and Madhyamik Pathankhali
+                                Adarsha Vidyapith Higher
+                                secondary school achiving 65% marks W.B.B.S.E (Board)</li>
+                            <li><span>Higher-Secondary</span><br>2019-2021 Higher Secondary Study
+                                Debnagar Mokshoda Dinda Higher
+                                Secondary School achiving 84% marks W. B.C.H.S.E(Board) </li>
+                            <li><span>Graduation</span><br> 2021-2024 Bachelor of Computer
+                                Application Narula Institute of
+                                Technology achiving 8.1(cpga) on MAKAUT Univercity</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------Services------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas magni, suscipit impedit
+                        nostrum molestias.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas magni, suscipit impedit
+                        nostrum molestias.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quas magni, suscipit impedit
+                        nostrum molestias.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------portfolio--------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpg">
+                    <div class="layer">
+                        <h3>Web Page Designing </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat, eveniet dolore
+                            alias quibusdam amet.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.jpg">
+                    <div class="layer">
+                        <h3>App Designing </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat, eveniet dolore
+                            alias quibusdam amet.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.jpg">
+                    <div class="layer">
+                        <h3>UI/UX Designing </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis placeat, eveniet dolore
+                            alias quibusdam amet.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------------------contact----------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="roe">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>suvojitbijali4@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7319389981</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/suvojit.bijali.758"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/suvojitbijali/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Resume.pdf.pdf" download class="btn btn2">Download Resuma</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright Suvo. Made with <i class="fa-solid fa-heart"></i> by Suvojit Bijali</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontains = document.getElementsByClassName("tab-contains");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontain of tabcontains) {
+                tabcontain.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        } 
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzGO4CWTovflZq4M_JRtLUiTFMCpvFYPmOLEi5bTYtI_hx0WUKfmnjVb4p7uqJckxvtuw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response =>{
+                    msg.innerHTML = "Message sent Successfully. Thank You"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
